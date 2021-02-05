@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="index.html" method="post">
+        <label for="name">soy label</label> <br>
+        <input type="text" value="soy input" id="name" name="name" size="50" maxlength="2"> <br>
+        
+        <label for="password">password</label> <br>
+        <input type="password" name="password" id="password" size="50" maxlength="10" name="password"></input> <br>
+
+        <label for="gender-H">Hombre</label>
+        <input type="radio" name="gender" id="gender-H" value="Hombre" >
+        <label for="gender-F">Mujer</label>
+        <input type="radio" name="gender" id="gender-F" value="Mujer" checked>
+
+        <h3>Dias disponibles</h3>
+        <label for="lunes">lunes</label>
+        <input type="checkbox" name="dias" value="lunes" id="lunes" checked>
+        <label for="martes">martes</label>
+        <input type="checkbox" name="dias" value="martes" id="martes">
+        <br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" required>
+        <br>
+
+        <label for="url">Ingrese web</label> <br>
+        <input type="url" name="url" id="url" required>
+        <br>
+
+        <label for="phone">phone</label> <br>
+        <input type="tel" name="phone" id="phone" placeholder="xx" required>
+        <br>
+
+        <label for="search">search</label> <br>
+        <input type="search" name="search" id="search" placeholder="xx" required>
+        <br>
+
+        <label for="number">number</label> <br>
+        <input type="number" name="number" id="number" placeholder="xx" required min="10" max="50" step="10">
+        <br>
+
+        <label for="range">number</label> <br>
+        <input type="range" name="range" id="range" placeholder="xx" required min="10" max="50" step="10">
+        <br>
+
+        <label for="date">date</label> <br>
+        <input type="date" name="date" id="date" placeholder="xx" required>
+        <br>
+
+        <label for="time">Hora</label> <br>
+        <input type="time" name="time" id="time" placeholder="xx" value="12:00:00">
+        <br>
+
+        <label for="color">Hora</label> <br>
+        <input type="color" name="color" id="color" placeholder="xx">
+        <br>
+        <input type="submit" value="enviar datos">
+        <input type="reset" value="limpiar">
+
+    </form>
+</body>
+</html>
+
+<!-- asociar label con input a traves de input  -->
+<!-- con checked selecciona preselecciona el campo -->
+<!-- required (campo necesario) -->
