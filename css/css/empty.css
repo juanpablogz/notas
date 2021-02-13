@@ -1,0 +1,14 @@
+article p {
+    background: red;
+    padding: 10px;
+    margin: 10px;
+}
+/* vacio */
+article p:empty {
+    background: blue;
+    padding: 10px;
+    margin: 10px;
+}
+section ul li:not(.elegido) {
+    background: orange
+}

@@ -1,0 +1,19 @@
+/* selector de etiqueta */
+p {
+    color: blue;
+}
+h2 {
+    color: orange;
+}
+/* selector de clase */
+.title {
+    color: red;
+}
+/* selector de id  tienen mas peso en especificidad */
+/* se recomienda que el id sea lo mas significativo  */
+#footer {
+    background: orange;
+}
+.footer {
+    background: red;
+}

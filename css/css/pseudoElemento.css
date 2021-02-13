@@ -1,0 +1,19 @@
+p:nth-child(1)::first-letter {
+    font-weight: bold;
+    font-size: 30px;
+}
+p:nth-child(2)::first-line {
+    font-weight: bold;
+    font-size: 30px;
+}
+/* en content pueden ir imagenes */
+p:nth-child(3)::before {
+    content: '';
+    border: 2px solid red;
+    display: block;
+    width: 300px;
+}
+p:nth-child(3)::after {
+    content: '';
+    border: 2px solid red;
+}

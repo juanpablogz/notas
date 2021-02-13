@@ -1,0 +1,54 @@
+/* :hover */
+div:hover {
+    background: red;
+}
+input[type="submit"] {
+    background: rgb(28,68, 229);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: rgb(28,68, 229, 0.5);
+}
+/* active */
+input[type="submit"]:active {
+    font-size: 20px;
+}
+/* focus formulario y enlaces*/
+input[type="submit"]:focus {
+    font-size: 25px;
+}
+
+/* pseudo-clases estructurales */
+nav > ul li:first-child {
+    background: red;
+}
+nav > ul li:last-child {
+    background: blue;
+}
+
+h1 strong:only-child {
+    color: red;
+}
+/* selecciona elementos pares con even */
+div > p:nth-child(even) {
+    background: blue;
+}
+/* selecciona elementos impares */
+div > p:nth-child(odd) {
+    background: orange;
+}
+/* selecciona elementos  */
+div > p:nth-child(1) {
+    background: red;
+}
+/* formula xn+Y donde Y representa el inico y xn representa la secuencia */
+section > p:nth-child(3n+2) {
+    background: red;
+}
+/* con nthd-last-child el conteo empieza desde abajo */
+

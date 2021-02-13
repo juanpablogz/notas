@@ -1,0 +1,45 @@
+/* ejemplo de selector de atributo basico */
+/* selecciona la imagen que tiene el atributo alt definido */
+/* selecciona el elemento html basado en su atributo 
+independiente de su valor */
+/* se aceptan multiples valores */
+p[title] {
+    background: red;
+}
+
+section > p[title][class] {
+    background: blue;
+}
+/* selector atributo con valor */
+/* selecciona el elemento basado en su atributo 
+pero su valor debe ser exacto */
+section > p[title = "info"] {
+    background: green;
+}
+/* ----------------------------------------------- */
+/* selector atributo continue 
+selecciona elemento basado en su atributo  
+y en su valor contiene por lo menos una instancia del valor 
+especificado */
+/* selecciona elementos si el valor del elemento es similar */
+main > article[class*="post"] {
+    background: gold;
+}
+
+/* selector comienza con  */
+main > article[class^="c"] {
+    background: red;
+}
+/* selector termina con  */
+main > article[class^="d"] {
+    background: blue;
+}
+
+/* selecciona basado en su atributo pero su valor es igual a una
+lista de palabras separadas por un espacio en blanco y uno de ellos 
+contiene exactamente el valor seleccionado */
+/* busca coincidencia de palabras separadas  */
+/* alt+Ñ */
+[title~="titulo"] {
+    background: orange;
+}

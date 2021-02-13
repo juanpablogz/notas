@@ -1,0 +1,23 @@
+p {
+    background: red;
+}
+div.peligro p {
+    background: blue;
+}
+div#cuidado p {
+    background: orange;
+}
+body#inicio div p {
+    background: green;
+}
+/* especificidad  */
+/* 
+0001 = 1
+0012 = 12
+0102 = 102
+0103 = 103 */
+/* ejemplo 
+html head body h1#index p.prin {
+
+}
+0115 = 115 */

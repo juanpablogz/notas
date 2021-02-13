@@ -1,0 +1,21 @@
+/* selector descendiente */
+h1 em {
+    color: red;
+}
+/* combinador hijo */
+/* selector mas directo selecciona el hijo directo de un padre */
+section > p {
+    background: red;
+}
+/* combinador hermano adyacente */
+/* tiene una etiqueta hermana que la precede de forma inmediata */
+h3+section {
+    background: red;
+}
+/* selecciona los elementos article que contienen parrafos
+pero el primer parrafo no tiene una etiqueta hermana que le precede
+asi que selecciona todos elementos menos el primero */
+article p+p {
+    color: blue;
+}
+
